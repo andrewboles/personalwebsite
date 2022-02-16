@@ -27,7 +27,7 @@ module.exports = {
     // static: {
     //   directory: path.join(__dirname, 'src'),
     // },
-    static: ['./src'],
+    static: ['./dist'],
     compress: true,
     port: 9000,
   },
