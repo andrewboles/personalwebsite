@@ -58,6 +58,7 @@ Colors:
     a95144 dusty red
     363945 dark slate
 
+    https://codepen.io/mweslander/pen/JreNPj
 */
 
 
@@ -98,9 +99,10 @@ nav li {
     justify-content: center;
     align-items: center;
     height: calc(100vh);
-    /* background-color: #363945; */
+    background-color: #363945;
 }
 .hero h2{
+    position: absolute;
     color:#f2ebe6;
     font-size: 31px;
     text-align: center;
