@@ -30,6 +30,12 @@ body {
 ol, ul {
 	list-style: none;
 }
+#myCanvas{
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+}
 
 blockquote, q {
 	quotes: none;
@@ -92,7 +98,7 @@ nav li {
     justify-content: center;
     align-items: center;
     height: calc(100vh);
-    background-color: #363945;
+    /* background-color: #363945; */
 }
 .hero h2{
     color:#f2ebe6;
@@ -103,6 +109,7 @@ nav li {
 
 .hero button {
     position: absolute;
+    z-index: 2;
     bottom: 160px;
     border-radius: 14px;
     padding: 1rem 1.4rem;
