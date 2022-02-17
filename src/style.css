@@ -143,13 +143,13 @@ nav li {
 }
 .skills-section i{
     color: #a95144;
-    font-size: 65px;
+    font-size: clamp(2rem, 5vw, 4rem);
     margin: 5px;
 }
 .skills-section h6{
     color: #89908c;
     font-family: 'Manrope', sans-serif;
-    font-size: 18px;
+    font-size: clamp(1rem, 2vw, 1.3rem); 
     margin: 4px 0px;
 }
 .about h2{
@@ -169,6 +169,7 @@ nav li {
     display: flex;
     justify-content: space-around;
     margin-bottom: 30px;
+    /* flex-wrap: wrap; */
 
 }
 .skills-card{
@@ -192,3 +193,4 @@ nav li {
         flex-direction: column;
     }
 }
+
