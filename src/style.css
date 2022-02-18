@@ -85,7 +85,7 @@ nav ul {
 
 nav li {
     color: #f2ebe6;
-    font-size: 19px;
+    font-size: 22px;
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     margin: 0 1rem;
@@ -102,13 +102,26 @@ nav li {
     height: calc(100vh);
     background-color: #363945;
 }
-.hero h2{
+
+.hero-text{
+    display: flex;
     position: absolute;
-    color:#f2ebe6;
-    font-size: 31px;
-    text-align: center;
     margin: 0 3rem;
     top: 220px;
+}
+.hero h2{
+    color:#a95144;
+    font-size: 42px;
+    text-align: center;
+    font-weight: 400;
+   
+}
+.hero h3{
+    color:#f2ebe6;
+    font-size: 42px;
+    text-align: center;
+    font-weight: 300;
+   
 }
 
 .hero button {
@@ -134,7 +147,7 @@ nav li {
     padding: 10px;
     flex: 1;
     font-family: 'Manrope', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1.5;
     
 }
@@ -188,13 +201,53 @@ nav li {
     background-color: #363945;
 }
 .contact{
-    height: calc(30vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: calc(50vh); */
     background-color: #363945;
 }
+.contact h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 55px;
+    font-weight: 400;
+    margin: 5px 0px;
+    color:#89908c
+}
+.contact ul {
+    padding: 15px;
+    margin: 15px auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+}
+
+.contact li {
+    color: #f2ebe6;
+    font-size: 45px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    margin: 3rem 1rem;
+}
+
+
+
+
+
+
+
 
 @media (max-width: 940px){
     .about{
         flex-direction: column;
+    }
+    .hero-text{
+        flex-direction: column;
+        top: 180px;
     }
 }
 
