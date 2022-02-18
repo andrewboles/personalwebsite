@@ -226,11 +226,14 @@ nav li {
     flex: 1;
 }
 
-.contact li {
-    color: #f2ebe6;
+.contact a {
+    color: #cf9535;
     font-size: 45px;
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
+    
+}
+.contact li{
     margin: 3rem 1rem;
 }
 
