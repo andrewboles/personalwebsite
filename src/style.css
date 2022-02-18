@@ -206,18 +206,18 @@ nav li {
     justify-content: center;
     align-items: center;
     /* height: calc(50vh); */
-    background-color: #363945;
+    background-color: #f2ebe6;
 }
 .contact h2 {
     font-family: 'Manrope', sans-serif;
-    font-size: 55px;
+    font-size: clamp(2.2rem, 5vw, 4rem);
     font-weight: 400;
-    margin: 5px 0px;
+    margin-top: 40px;
     color:#89908c
 }
 .contact ul {
     padding: 15px;
-    margin: 15px auto;
+    margin: 25px auto;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -228,16 +228,27 @@ nav li {
 
 .contact a {
     color: #cf9535;
-    font-size: 45px;
+    font-size: clamp(1.8rem, 5vw, 3.2rem);
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
+    margin-right: 5px;
+    
     
 }
+a:link { text-decoration: none; }
+
 .contact li{
+    display: flex;
+    align-items: center;
     margin: 3rem 1rem;
 }
 
-
+.contact svg{
+    width: clamp(1.8rem, 5vw, 3.2rem);
+    height: clamp(1.8rem, 5vw, 3.2rem);
+    fill: #cf9535;
+    /* border: 1px solid black; */
+}
 
 
 
