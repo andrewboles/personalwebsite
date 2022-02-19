@@ -108,7 +108,7 @@ nav a {
     display: flex;
     position: absolute;
     margin: 0 3rem;
-    top: 220px;
+    top: 20vh;
 }
 .hero h2{
     color:#a95144;
@@ -128,7 +128,7 @@ nav a {
 .hero button {
     position: absolute;
     z-index: 2;
-    bottom: 160px;
+    top: 80vh;
     border-radius: 14px;
     padding: 1rem 1.4rem;
     background-color: #a95144;
@@ -234,7 +234,7 @@ nav a {
     color:#89908c
 }
 .contact ul {
-    padding: 15px;
+    padding: 5px;
     margin: 25px auto;
     flex: 1;
     display: flex;
@@ -246,7 +246,7 @@ nav a {
 
 .contact a {
     color: #cf9535;
-    font-size: clamp(1.8rem, 5vw, 3.2rem);
+    font-size: clamp(1.6rem, 5vw, 3.2rem);
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     margin-right: 5px;
@@ -279,7 +279,7 @@ a:link { text-decoration: none; }
     }
     .hero-text{
         flex-direction: column;
-        top: 180px;
+        top: 18vh;
     }
 }
 
