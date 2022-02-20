@@ -129,8 +129,7 @@ nav a {
     z-index: 2;
     top: 80vh;
 }
-.hero input {
-    z-index: 2;
+#butt {
     border-radius: 14px;
     padding: 1rem 1.4rem;
     background-color: #a95144;
