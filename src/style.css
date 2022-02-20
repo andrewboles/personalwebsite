@@ -137,6 +137,13 @@ nav a {
     font-family: 'Manrope', sans-serif;
     font-size: large;
     color: #f2ebe6;
+    transition-duration: 0.4s;
+}
+#butt:hover{
+    transform: scale(1.2);
+    background-color: #f2ebe6;
+    color: #a95144;
+
 }
 .about{
     display: flex;
