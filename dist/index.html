@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <link rel="stylesheet" href="flickity.css" media="screen">
     <title>Andrew Boles - Full Stack Developer</title>
     <script defer src="main.js"></script>
 </head>
@@ -115,13 +116,35 @@
     </div>
     <div id="projects" class="projects">
         <h2>Projects</h2>
-        <div class="project-video">
-            <video playsinline loop muted autoplay preload='metadata' >
-                <source src="./de.mp4" type="video/mp4" />
-<!--                 <source src={post.downloadURL} type="video/quicktime" /> -->
-            </video> 
-            <h3>FlickFlock Social Media App</h3>
-            <h4>Full stack social media application built with React, Next.js, Node.js, Express.js, MongoDB, and AWS S3.</h4>
+        <div class="project-gallery js-flickity" data-flickity-options='{ "cellAlign": "center", "contain": true , "wrapAround": true}'>
+            <div class="project-video">
+                <video playsinline loop muted autoplay preload='metadata' >
+                    <source src="./de.mp4" type="video/mp4" />
+                </video> 
+                <h3>FlickFlock Social Media App</h3>
+                <h4>Full stack social media application built with React, Next.js, Node.js, Express.js, MongoDB, and AWS S3.</h4>
+            </div>
+            <div class="project-video">
+                <video playsinline loop muted autoplay preload='metadata' >
+                    <source src="./de.mp4" type="video/mp4" />
+                </video> 
+                <h3>Hamburgler App</h3>
+                <h4>Full stack social media application built with React, Next.js, Node.js, Express.js, MongoDB, and AWS S3.</h4>
+            </div>
+            <div class="project-video">
+                <video playsinline loop muted autoplay preload='metadata' >
+                    <source src="./de.mp4" type="video/mp4" />
+                </video> 
+                <h3>Pizzagate App</h3>
+                <h4>Full stack social media application built with React, Next.js, Node.js, Express.js, MongoDB, and AWS S3.</h4>
+            </div>
+            <div class="project-video">
+                <video playsinline loop muted autoplay preload='metadata' >
+                    <source src="./de.mp4" type="video/mp4" />
+                </video> 
+                <h3>To-Do App</h3>
+                <h4>Full stack social media application built with React, Next.js, Node.js, Express.js, MongoDB, and AWS S3.</h4>
+            </div>
         </div>
         <div class="project-buttons">
             <button>See Project</button>
@@ -174,7 +197,7 @@
         }
 
     </script>
-
+    <script src="flickity.pkgd.min.js"></script>
    
     
    </body>

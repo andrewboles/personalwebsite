@@ -231,6 +231,11 @@ nav a:hover {
     width: 50vw;
     border-radius: 13px;
     transition-duration: 0.4s;
+    margin-right: 13rem;
+}
+
+.project-video.is-selected{
+    box-shadow: 0 1px 7px 0px black;
 }
 .project-video:hover{
     transform: scale(.95);
@@ -273,6 +278,9 @@ nav a:hover {
     color:#363945;
     margin: 15px;
     line-height: 1.3;
+}
+.project-gallery{
+    width: 100vw;
 }
 
 
@@ -338,6 +346,9 @@ a:link { text-decoration: none; }
     .hero-text{
         flex-direction: column;
         top: 18vh;
+    }
+    .project-video{
+        margin-right: 5rem;
     }
 }
 
