@@ -154,15 +154,15 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     background-color: #f2ebe6;
-    padding: 10px 0px;
+    padding: 30px 0px;
 }
 
 .about aside {
-    margin: 20px 30px;
+    margin: 25px 30px;
     padding: 10px;
     flex: 1;
     font-family: 'Manrope', sans-serif;
-    font-size: clamp(1.3rem, 2.6vw, 2.1rem);
+    font-size: 30px;
     line-height: 1.5;
     
 }
@@ -223,7 +223,7 @@ nav a:hover {
     font-size: clamp(2.2rem, 5vw, 4rem);
     font-weight: 400;
     margin-top: 60px;
-    margin-bottom: 20px;;
+    margin-bottom: 20px;
     color:#89908c
 }
 .project-video {
@@ -232,6 +232,9 @@ nav a:hover {
     border-radius: 13px;
     transition-duration: 0.4s;
     margin-right: 13rem;
+    padding-bottom: 15px;
+    margin-bottom: 35px;
+    z-index: 3;
 }
 
 .project-video.is-selected{
@@ -350,8 +353,4 @@ a:link { text-decoration: none; }
     .project-video{
         margin-right: 5rem;
     }
-    .about h2{
-        margin-top: 0px;
-    }
 }
-
