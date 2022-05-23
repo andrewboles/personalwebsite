@@ -281,11 +281,14 @@ nav a:hover {
 }
 .project-video {
   background-color: #cf9535;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 50vw;
   border-radius: 13px;
   transition-duration: 0.4s;
   margin-right: 13rem;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
   margin-bottom: 35px;
   z-index: 3;
 }
