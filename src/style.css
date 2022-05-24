@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Manrope:wght@200;300;400;500;600&family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Manrope:wght@200;300;400;500;600;700&family=Quicksand&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap');
 html,
 body,
 div,
@@ -144,20 +145,26 @@ nav {
 nav ul {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex: 1;
   padding: 0 1rem;
 }
 nav a {
   color: #f2ebe6;
-  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-size: clamp(1rem, 2vw, 1.5rem);
   font-family: "Manrope", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0 1rem;
   transition-duration: 0.4s;
 }
 nav a:hover {
   transform: scale(1.1);
   color: #cf9535;
+}
+
+nav svg {
+ width: clamp(1.2rem, 2.4vw, 1.8rem);
+ height: clamp(1.2rem, 2.4vw, 1.8rem);
 }
 .hero {
   display: flex;
@@ -176,20 +183,21 @@ nav a:hover {
   position: absolute;
   margin: 0 3rem;
   top: 20vh;
+  line-height: 2.2;
 }
 .hero h2 {
   color: #a95144;
   font-size: 42px;
   text-align: center;
-  font-weight: 400;
+  font-weight: 500;
 }
 .hero h3 {
   color: #f2ebe6;
   font-size: 42px;
   text-align: center;
-  font-weight: 300;
+  font-weight: 400;
 }
-#butt {
+#workjump {
   position: absolute;
   z-index: 2;
   top: 80vh;
@@ -202,7 +210,7 @@ nav a:hover {
   color: #f2ebe6;
   transition-duration: 0.4s;
 }
-#butt:hover {
+#workjump:hover {
   transform: scale(1.1);
   background-color: #f2ebe6;
   color: #a95144;
@@ -213,12 +221,16 @@ nav a:hover {
   background-color: #f2ebe6;
   padding: 10px 0px;
 }
+
+about a:link {
+  text-decoration: none;
+}
 .about aside {
   margin: 20px 30px;
   padding: 10px;
-  flex: 1;
+  flex: 1.4;
   font-family: "Manrope", sans-serif;
-  font-size: clamp(1.3rem, 2.6vw, 2.1rem);
+  font-size: clamp(1.5rem, 2.6vw, 1.9rem);
   line-height: 1.5;
 }
 .skills-section {
@@ -344,42 +356,21 @@ nav a:hover {
   align-items: center; /* height: calc(50vh); */
   background-color: #f2ebe6;
 }
-.contact h2 {
-  font-family: "Manrope", sans-serif;
-  font-size: clamp(2.2rem, 5vw, 4rem);
-  font-weight: 400;
-  margin-top: 60px;
-  color: #89908c;
-}
-.contact ul {
-  padding: 5px;
-  margin: 25px auto;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  flex: 1;
-}
+
 .contact a {
   color: #cf9535;
-  font-size: clamp(1.6rem, 5vw, 3.2rem);
+  font-size: clamp(1.6rem, 2.6vw, 1.9rem);
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   margin-right: 5px;
+  font-weight: 500;
 }
 a:link {
   text-decoration: none;
 }
-.contact li {
-  display: flex;
-  align-items: center;
-  margin: 3rem 1rem;
-}
 .contact svg {
-  width: clamp(1.8rem, 5vw, 3.2rem);
-  height: clamp(1.8rem, 5vw, 3.2rem);
-  fill: #cf9535; /* border: 1px solid black; */
+  width: clamp(1.6rem, 2.6vw, 1.9rem);
+  height: clamp(1.6rem, 2.6vw, 1.9rem); /* border: 1px solid black; */
 }
 @media (max-width: 940px) {
   .about {
@@ -395,4 +386,92 @@ a:link {
   .about h2 {
     margin-top: 0px;
   }
+}
+
+.contact p {
+  text-align: center;
+  margin: 40px 0px;
+  margin-right: 10%;
+  margin-left: 10%;
+  padding: 10px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.6rem, 2.6vw, 1.9rem);
+  line-height: 1.5;
+  color: #363945;
+}
+
+.contact form{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+
+
+.contact input {
+  color: #363945;
+  background: none;
+  height: 40px;
+  border-radius: 5px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 10px;
+  border: 2px solid #a95144;
+}
+
+.contact label {
+  color: #363945;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: clamp(1.6rem, 2.6vw, 1.9rem);
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+}
+
+.contact textarea {
+  color: #363945;
+  height: 300px;
+  background: none;
+  border-radius: 5px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 20px;
+  border: 2px solid #a95144;
+}
+#submit-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: none;
+  border-radius: 5px;
+  border: 2px solid #a95144;
+  height: 40px;
+  font-weight: 600;
+  color: #363945;
+  font-size: clamp(1.4rem, 2.4vw, 1.8rem);
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+}
+
+.contact h6 {
+  text-align: center;
+  color: #363945;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  margin-right: 5px;
+  font-weight: 500;
+  margin: 30px
+}
+.contact h6 > a {
+  color: #cf9535;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  margin-right: 5px;
+  font-weight: 500;
 }
