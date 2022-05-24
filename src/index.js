@@ -163,15 +163,12 @@ function render() {
 
 }
 
-let contact = ""
 
 const contactInput = document.getElementById("name")
 const messageInput = document.getElementById("message")
 const submitButton = document.getElementById("submit-button")
 let messageContent = ""
 let contactContent = ""
-let emailRef=`mailto:andrewboles@me.com ?Subject=new message from ${contactContent} via andrewboles.com! &amp;body=${messageContent}`
-
 contactInput.addEventListener('input',e =>{
     console.log(e.target.value)
     contactContent = e.target.value

@@ -183,7 +183,7 @@ nav svg {
   position: absolute;
   margin: 0 3rem;
   top: 20vh;
-  line-height: 2.2;
+  line-height: 1.8;
 }
 .hero h2 {
   color: #a95144;
@@ -222,9 +222,10 @@ nav svg {
   padding: 10px 0px;
 }
 
-about a:link {
-  text-decoration: none;
+.about a {
+  color: #cf9535;
 }
+
 .about aside {
   margin: 20px 30px;
   padding: 10px;
@@ -242,6 +243,11 @@ about a:link {
 }
 .skills-section i {
   color: #a95144;
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin: 5px;
+}
+.skills-section svg {
+  fill: #a95144;
   font-size: clamp(2rem, 5vw, 4rem);
   margin: 5px;
 }
@@ -455,6 +461,12 @@ a:link {
   font-size: clamp(1.4rem, 2.4vw, 1.8rem);
   font-family: "Manrope", sans-serif;
   text-align: center;
+  transition-duration: 0.4s;
+}
+#submit-button:hover {
+  transform: scale(1.05);
+  background-color: #a95144;
+  color: #f2ebe6;
 }
 
 .contact h6 {
