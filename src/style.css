@@ -200,7 +200,7 @@ nav svg {
 #workjump {
   position: absolute;
   z-index: 2;
-  top: 80vh;
+  bottom: 10vh;
   border-radius: 10px;
   padding: 1rem 1.4rem;
   background-color: #a95144;
@@ -228,7 +228,7 @@ nav svg {
 }
 
 .about aside {
-  margin: 20px 30px;
+  margin: 35px 20px;
   padding: 10px;
   flex: 1.4;
   font-family: "Manrope", sans-serif;
@@ -236,7 +236,7 @@ nav svg {
   line-height: 1.5;
 }
 .skills-section {
-  margin: 25px 30px;
+  margin: 35px 20px;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -281,7 +281,7 @@ nav svg {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 5px 2px;
+  margin: 5px 4px;
 }
 .projects {
   background-color: #363945;
@@ -295,7 +295,7 @@ nav svg {
   font-size: clamp(2.2rem, 5vw, 4rem);
   font-weight: 400;
   margin-top: 60px;
-  margin-bottom: 35px;
+  margin-bottom: 75px;
   color: #89908c;
 
 }
@@ -305,7 +305,7 @@ nav svg {
   flex-direction: row;
   align-items: center;
   padding-bottom: 25px;
-  margin-bottom: 35px;
+  margin-bottom: 75px;
 } 
 .video-background{
   background-color: #cf9535;
@@ -322,7 +322,7 @@ nav svg {
 .project-video video {
   border-radius: 10px;
   width: 360px;
-  margin: 35px;
+  margin: 40px;
   z-index: 1 ;
   transition-duration: 0.4s;
 }
@@ -346,7 +346,7 @@ nav svg {
   border: none;
   margin: 10px 15px;
   font-family: "Manrope", sans-serif;
-  font-size: clamp(0.9rem, 1.6vw, 2rem);
+  font-size: clamp(0.9rem, 1.6vw, 1.62rem);
   color: #f2ebe6;
   transition-duration: 0.4s;
   font-weight: 500;
@@ -356,7 +356,7 @@ nav svg {
 }
 .project-buttons {
   display: flex;
-  align-items: center;
+  
 }
 
 .tech-used{
@@ -376,7 +376,7 @@ nav svg {
   border: none;
   margin: 10px 15px;
   font-family: "Manrope", sans-serif;
-  font-size: clamp(1.3rem, 2.2vw, 2rem);
+  font-size: clamp(1.3rem, 2.2vw, 2.19rem);
   color: #f2ebe6;
   transition-duration: 0.4s;
 }
@@ -438,6 +438,10 @@ a:link {
 @media (max-width: 800px) {
   .project-video{
     flex-direction: column;
+  }
+  .project-video video {
+
+    margin: 35px 0px;
   }
 }
 
