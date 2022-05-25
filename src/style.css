@@ -185,7 +185,7 @@ nav svg {
   top: 20vh;
   line-height: 1.8;
 }
-.hero h2 {
+.hero strong {
   color: #a95144;
   font-size: 42px;
   text-align: center;
@@ -201,12 +201,13 @@ nav svg {
   position: absolute;
   z-index: 2;
   top: 80vh;
-  border-radius: 14px;
+  border-radius: 10px;
   padding: 1rem 1.4rem;
   background-color: #a95144;
   border: none;
   font-family: "Manrope", sans-serif;
   font-size: large;
+  font-weight: 500;
   color: #f2ebe6;
   transition-duration: 0.4s;
 }
@@ -294,45 +295,98 @@ nav svg {
   font-size: clamp(2.2rem, 5vw, 4rem);
   font-weight: 400;
   margin-top: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   color: #89908c;
+
 }
 .project-video {
-  background-color: #cf9535;
+  position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  width: 50vw;
-  border-radius: 13px;
-  transition-duration: 0.4s;
-  margin-right: 13rem;
   padding-bottom: 25px;
   margin-bottom: 35px;
-  z-index: 3;
+} 
+.video-background{
+  background-color: #cf9535;
+  border-radius: 10px;
+  width: 300px;
+  height: 260px;
+  margin: 0px;
+  position: absolute;
+  z-index: 0;
 }
-.project-video.is-selected {
-  box-shadow: 0 1px 7px 0px black;
-}
-.project-video:hover {
+.project-video video:hover {
   transform: scale(0.95);
 }
 .project-video video {
-  border-radius: 13px;
-  width: calc(50vw - 30px);
-  margin: 15px;
+  border-radius: 10px;
+  width: 360px;
+  margin: 35px;
+  z-index: 1 ;
+  transition-duration: 0.4s;
+}
+
+.reverse{
+  flex-direction: row-reverse
+}
+
+.project-description{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 360px;
 }
 .projects button {
-  border-radius: 14px;
+  border-radius: 10px;
   padding: 0.7rem 1.1rem;
   background-color: #a95144;
   border: none;
-  margin: 30px 15px;
+  margin: 10px 15px;
   font-family: "Manrope", sans-serif;
   font-size: clamp(0.9rem, 1.6vw, 2rem);
   color: #f2ebe6;
   transition-duration: 0.4s;
+  font-weight: 500;
+}
+.project a{
+  vertical-align: middle;
+}
+.project-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.tech-used{
+  display: flex;
+  align-items: center;
+}
+.tech-used svg, i{
+  color: #f2ebe6;
+  fill: #f2ebe6;
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  margin: 10px;
+}
+.project-buttons svg {
+  border-radius: 10px;
+  padding: 0.7rem 1.1rem;
+  background-color: #a95144;
+  border: none;
+  margin: 10px 15px;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(1.3rem, 2.2vw, 2rem);
+  color: #f2ebe6;
+  transition-duration: 0.4s;
 }
 .projects button:hover {
+  transform: scale(1.1);
+  background-color: #f2ebe6;
+  color: #a95144;
+}
+
+.project-buttons svg:hover {
   transform: scale(1.1);
   background-color: #f2ebe6;
   color: #a95144;
@@ -342,18 +396,22 @@ nav svg {
   font-size: clamp(1.4rem, 2.5vw, 2rem);
   font-weight: 600;
   margin: 0px 15px;
-  color: #363945;
+  color: #cf9535;
 }
 .projects h4 {
   font-family: "Manrope", sans-serif;
-  font-size: clamp(1rem, 2vw, 1.6rem);
-  font-weight: 200;
-  color: #363945;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-weight: 500;
+  color: #f2ebe6;
   margin: 15px;
   line-height: 1.3;
 }
 .project-gallery {
+  display: flex;
+  flex-direction: column;
   width: 100vw;
+  align-items: center;
+  
 }
 .contact {
   display: flex;
@@ -368,7 +426,6 @@ nav svg {
   font-size: clamp(1.6rem, 2.6vw, 1.9rem);
   font-family: "Manrope", sans-serif;
   font-weight: 400;
-  margin-right: 5px;
   font-weight: 500;
 }
 a:link {
@@ -378,16 +435,19 @@ a:link {
   width: clamp(1.6rem, 2.6vw, 1.9rem);
   height: clamp(1.6rem, 2.6vw, 1.9rem); /* border: 1px solid black; */
 }
-@media (max-width: 940px) {
+@media (max-width: 800px) {
+  .project-video{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1000px) {
   .about {
     flex-direction: column;
   }
   .hero-text {
     flex-direction: column;
     top: 18vh;
-  }
-  .project-video {
-    margin-right: 5rem;
   }
   .about h2 {
     margin-top: 0px;
@@ -420,7 +480,7 @@ a:link {
   color: #363945;
   background: none;
   height: 40px;
-  border-radius: 5px;
+  border-radius: 10px;
   font-family: "Manrope", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -441,7 +501,7 @@ a:link {
   color: #363945;
   height: 300px;
   background: none;
-  border-radius: 5px;
+  border-radius: 10px;
   font-family: "Manrope", sans-serif;
   font-weight: 500;
   font-size: 24px;
@@ -453,10 +513,10 @@ a:link {
   flex-direction: column;
   justify-content: center;
   background: none;
-  border-radius: 5px;
+  border-radius: 10px;
   border: 2px solid #a95144;
   height: 40px;
-  font-weight: 600;
+  font-weight: 500;
   color: #363945;
   font-size: clamp(1.4rem, 2.4vw, 1.8rem);
   font-family: "Manrope", sans-serif;
@@ -464,7 +524,7 @@ a:link {
   transition-duration: 0.4s;
 }
 #submit-button:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   background-color: #a95144;
   color: #f2ebe6;
 }
