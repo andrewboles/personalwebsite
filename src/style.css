@@ -556,3 +556,7 @@ a:link {
   margin-right: 5px;
   font-weight: 500;
 }
+
+a{
+  z-index: 1;
+}
