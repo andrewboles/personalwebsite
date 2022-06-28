@@ -242,6 +242,7 @@ nav svg {
   flex-direction: column;
   flex: 1.25;
 }
+
 .skills-section i {
   color: #a95144;
   font-size: clamp(2rem, 5vw, 4rem);
@@ -276,6 +277,12 @@ nav svg {
   justify-content: space-around;
   margin-bottom: 30px; /* flex-wrap: wrap; */
 }
+
+.skills-room{
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .skills-card {
   display: flex;
   flex-direction: column;
@@ -311,7 +318,7 @@ nav svg {
   background-color: #cf9535;
   border-radius: 10px;
   width: 300px;
-  height: 260px;
+  height: 300px;
   margin: 0px;
   position: absolute;
   z-index: 0;
@@ -321,8 +328,8 @@ nav svg {
 }
 .project-video video {
   border-radius: 10px;
-  width: 360px;
-  margin: 40px;
+  width: 450px;
+  margin: 20px;
   z-index: 1 ;
   transition-duration: 0.4s;
 }
@@ -435,12 +442,16 @@ a:link {
   width: clamp(1.6rem, 2.6vw, 1.9rem);
   height: clamp(1.6rem, 2.6vw, 1.9rem); /* border: 1px solid black; */
 }
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .project-video{
     flex-direction: column;
   }
+  .video-background{
+    height: 260px;
+    margin-top: 10px;
+  }
   .project-video video {
-
+    width: 380px;
     margin: 35px 0px;
   }
   #workjump{
